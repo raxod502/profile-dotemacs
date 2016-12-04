@@ -120,7 +120,7 @@ grayed out.")
 	 'results
 	 `(,start ,end
 		  ,(benchmark-run
-		    (eval (sexp-at-point)))))
+                       (eval (sexp-at-point)))))
 	(goto-char end))
       (profile-dotemacs-show-results results)
       (switch-to-buffer (current-buffer)))))
