@@ -197,4 +197,4 @@ grayed out.")
    (car timings) (nth 1 timings) (nth 2 timings)))
 
 
-;; profile-dotemacs.el ends here
+;;; profile-dotemacs.el ends here
