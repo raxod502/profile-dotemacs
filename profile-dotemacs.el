@@ -102,6 +102,7 @@ grayed out.")
 
 ;; Main function
 
+;;;###autoload
 (defun profile-dotemacs ()
   "Load `profile-dotemacs-file' and benchmark its sexps."
   (interactive)
