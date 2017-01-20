@@ -77,7 +77,7 @@
 
 ;; User variables
 
-(defvar profile-dotemacs-file user-init-file
+(defvar profile-dotemacs-file "~/.emacs.d/init.el"
   "File to be profiled.")
 
 (defvar profile-dotemacs-low-percentage 3
