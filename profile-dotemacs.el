@@ -109,7 +109,7 @@ grayed out.")
   (with-current-buffer (find-file-noselect profile-dotemacs-file t)
     (setq buffer-read-only t) ;; just to be sure
     (goto-char (point-min))
-    (let (start end results)
+    (let (start end results (after-init-time nil))
       (while
 	  (< (point)
 	     (setq end (progn
