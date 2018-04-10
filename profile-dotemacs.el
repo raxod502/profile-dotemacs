@@ -140,10 +140,18 @@ grayed out.")
                             totaltime))
              col benchstr lowface)
 	(setq col
+<<<<<<< HEAD
               (profile-dotemacs-percentage-color
                percentage
                (face-background 'default)
                (face-background 'profile-dotemacs-time-face)))
+=======
+	      (profile-dotemacs-percentage-color
+	       percentage
+               (if (color-defined-p (face-background 'default))
+                   (face-background 'default) "black")
+	       (face-background 'profile-dotemacs-time-face)))
+>>>>>>> Handle unspecified background color of default face
 	(setq percentage (round (* 100 percentage)))
 	(setq benchstr (profile-dotemacs-make-benchstr current))
 	(overlay-put ov 'help-echo benchstr)
