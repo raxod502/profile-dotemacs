@@ -142,7 +142,8 @@ grayed out.")
 	(setq col
               (profile-dotemacs-percentage-color
                percentage
-               (face-background 'default)
+               (if (color-defined-p (face-background 'default))
+                   (face-background 'default) "black")
                (face-background 'profile-dotemacs-time-face)))
 	(setq percentage (round (* 100 percentage)))
 	(setq benchstr (profile-dotemacs-make-benchstr current))
